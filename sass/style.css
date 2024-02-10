@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(5, 2, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main > .box {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s;
+  cursor: pointer;
+}
+main > .box:hover > .box2 {
+  opacity: 0;
+}
+main > .box:hover > a {
+  display: none;
+}
+main > .box:hover > .box1 {
+  transform: translateZ(0);
+}
+main > .box > .box1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(78, 0, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(-32px);
+  transition: 1s;
+  border-radius: 10px;
+}
+main > .box > .box1 > p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  color: white;
+  text-transform: capitalize;
+}
+main > .box > .box2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 16, 78);
+  border: 5px solid rgb(4, 4, 110);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 10px rgb(130, 183, 216);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+main > .box > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 540px;
+  z-index: 2;
+  transition: 1s;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
